@@ -35,7 +35,7 @@ menu *initMenus()
     menu *sub_menu_others = createMenu("~/main/others");
 
     // Choices main menu
-    addChoice(createChoice("Say Hello", hellowWorld, NULL, main_menu), main_menu);
+    addChoice(createChoice("Say Hello", helloWorld, NULL, main_menu), main_menu);
     addChoice(createChoice("Others", nothing, sub_menu_others, sub_menu_others), main_menu);
     addChoice(createChoice("Exit game", leave, NULL, main_menu), main_menu);
 
