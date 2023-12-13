@@ -2,6 +2,8 @@
 #define MENUS_H
 
 
+int FIRST_MENU_LEN = 2;
+
 struct choice
 {
     char *phrase;
@@ -10,6 +12,7 @@ struct choice
     menu *sub_menu;
     menu *redirection;
 };
+typedef struct choice choice;
 
 struct menu
 {
