@@ -2,9 +2,6 @@
 #define MENUS_H
 
 
-int FIRST_MENU_LEN = 2;
-
-
 typedef struct choice choice;
 typedef struct menu menu;
 
