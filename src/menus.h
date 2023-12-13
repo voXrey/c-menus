@@ -25,7 +25,7 @@ struct menu
     int len_max;
 };
 
-menu *initMenus();
+void changeRedirection(choice *c, menu *redirection);
 void navigateInMenu(menu *m);
 void destroyMenu(menu *m);
 
