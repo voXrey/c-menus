@@ -9,6 +9,8 @@
 #define KYEL "\x1B[33m"
 
 
+const int FIRST_MENU_LEN = 2;
+
 // Tool to flush stdin
 void flushStdin()
 {

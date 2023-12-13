@@ -2,6 +2,9 @@
 #define MENUS_H
 
 
+typedef struct choice choice;
+typedef struct menu menu;
+
 struct choice
 {
     char *phrase;
@@ -18,9 +21,12 @@ struct menu
     int len_choices;
     int len_max;
 };
-typedef struct menu menu;
 
-menu *initMenus();
+
+choice *createChoice(char *phrase, void (*f)(), menu *sub_menu, menu *redirection);
+void changeRedirection(choice *c, menu *redirection);
+menu *createMenu(char *path);
+void addChoice(choice *c, menu *m);
 void navigateInMenu(menu *m);
 void destroyMenu(menu *m);
 
