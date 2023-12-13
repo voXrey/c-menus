@@ -4,6 +4,10 @@
 
 int FIRST_MENU_LEN = 2;
 
+
+typedef struct choice choice;
+typedef struct menu menu;
+
 struct choice
 {
     char *phrase;
@@ -12,7 +16,6 @@ struct choice
     menu *sub_menu;
     menu *redirection;
 };
-typedef struct choice choice;
 
 struct menu
 {
@@ -21,7 +24,6 @@ struct menu
     int len_choices;
     int len_max;
 };
-typedef struct menu menu;
 
 menu *initMenus();
 void navigateInMenu(menu *m);
