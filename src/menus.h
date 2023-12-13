@@ -25,7 +25,11 @@ struct menu
     int len_max;
 };
 
+
+choice *createChoice(char *phrase, void (*f)(), menu *sub_menu, menu *redirection);
 void changeRedirection(choice *c, menu *redirection);
+menu *createMenu(char *path);
+void addChoice(choice *c, menu *m);
 void navigateInMenu(menu *m);
 void destroyMenu(menu *m);
 
